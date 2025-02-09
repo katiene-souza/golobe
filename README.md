@@ -15,6 +15,17 @@
 
 Este README detalha o desenvolvimento do projeto Golobe, uma simulação do site inicial de uma agência de viagens, com foco na interface visual e no planejamento do banco de dados, conforme os requisitos da Primeira Entrega Individual.
 
+## Sumário
+
+1. [Visão Geral do Projeto](#visão-geral-do-projeto)
+2. [Estrutura do Projeto](#estrutura-do-projeto)
+3. [Interface Visual](#interface-visual)
+4. [Modelagem do Banco de Dados](#modelagem-do-banco-de-dados)  
+   - [Diagrama Conceitual](#diagrama-conceitual)  
+   - [Diagrama Lógico](#diagrama-lógico)  
+   - [Diagrama Físico](#diagrama-físico)
+5. [Apresentação do Projeto (Vídeo)](#apresentação-do-projeto-vídeo)
+
 ## Visão Geral do Projeto
 
 O projeto Golobe visa criar uma base sólida para uma agência de viagens fictícia, demonstrando a estrutura do site e o planejamento do banco de dados. Esta etapa inicial não inclui funcionalidades dinâmicas ou sistemas interativos, concentrando-se na apresentação visual e na organização dos dados.
@@ -82,7 +93,7 @@ Os diagramas do banco de dados foram criados utilizando o BRModelo, Lucid e outr
 O script SQL para criação das tabelas foi gerado a partir do diagrama físico, permitindo a implementação do banco de dados.
 
 ## Apresentação do Projeto (Vídeo)
-
+  ### [Link para o pitch](https://drive.google.com/file/d/1FyI3UkiALNEYk-ItL6BHa4KoShP9zW9_/view?usp=sharing)
 Um vídeo de até 2 minutos foi gravado demonstrando o projeto Golobe, incluindo:
 
 *   **Interface Criada:** Apresentação do design e conteúdo da página inicial, destacando a organização e os elementos visuais.
