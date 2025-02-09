@@ -33,10 +33,6 @@ agencia_viagem
 │  ├─ diagrama_conceitual.pdf
 │  ├─ diagrama_fisico.pdf
 │  └─ diagrama_logico.pdf
-├─ diagrama_fisico.png
-├─ Diagrama_logico.png
-├─ fisico.pdf
-├─ fisico.png
 ├─ images
 │  ├─ bed-dark.svg
 │  ├─ bed.svg
