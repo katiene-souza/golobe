@@ -35,7 +35,158 @@
         <p>Ofertas especiais adequadas ao seu plano</p>
       </section>
     </header>
+    <div class="card-pesquisas">
+      <div class="card-pesquisa-botoes">
+        <button id="btn-voo" class="btn-pesquisa">
+          <img src="images/plane-dark.svg" alt="Ícone de avião" />
+          <span>Voos</span>
+          <div class="linha-ativa ativo"></div>
+        </button>
+        <button id="btn-estadia" class="btn-pesquisa">
+          <img src="images/bed-dark.svg" alt="Ícone de cama" />
+          <span>Estadias</span>
+          <div class="linha-ativa"></div>
+        </button>
+      </div>
 
+      <div class="formularios-container">
+        <div id="form-voo" class="formulario-pesquisa">
+          <div class="input-container">
+            <div
+              class="input-group"
+              style="
+                border-right: none;
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+              "
+            >
+              <label for="voo-de">Origem</label>
+              <input
+                type="text"
+                placeholder="De"
+                id="voo-de"
+                class="input-de"
+              />
+            </div>
+            <img src="images/swap.svg" width="50px" />
+            <div
+              class="input-group"
+              style="
+                border-left: none;
+                border-top-right-radius: 4px;
+                border-bottom-right-radius: 4px;
+              "
+            >
+              <label for="voo-de">Destino</label>
+              <input
+                type="text"
+                placeholder="Para"
+                id="voo-para"
+                class="input-para"
+              />
+            </div>
+          </div>
+          <div class="input-container">
+            <div
+              class="input-group"
+              style="
+                border-right: none;
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+              "
+            >
+              <label for="voo-data-ida">Ida</label>
+              <input type="text" id="voo-data-ida" placeholder="data" class="input-data-ida" />
+            </div>
+            <div
+              class="input-group"
+              style="
+                border-top-right-radius: 4px;
+                border-bottom-right-radius: 4px;
+              "
+            >
+              <label for="voo-data-volta">Retorno</label>
+              <input type="text" id="voo-data-volta" placeholder="data" class="input-data-volta" />
+            </div>
+          </div>
+          <div class="input-group" style="border-radius: 4px">
+            <label for="voo-quantidade">Quant. Passagem</label>
+            <input
+              type="number"
+              placeholder="Quantidade"
+              id="voo-quantidade"
+              class="input-quantidade"
+            />
+          </div>
+          <div class="input-group" style="border-radius: 4px">
+            <label for="voo-classe">Classe</label>
+            <select id="voo-classe" class="input-classe">
+              <option value="economica">Econômica</option>
+              <option value="economica-premium">Econômica Premium</option>
+              <option value="executiva">Executiva</option>
+              <option value="primeira-classe">Primeira Classe</option>
+            </select>
+          </div>
+          <button id="btn-mostrar-voos">
+            Mostrar Voos
+          </button>
+        </div>
+
+        <div id="form-estadia" class="formulario-pesquisa oculto">
+          <div class="input-group" style="border-radius: 4px">
+            <label for="estadia-destino">Destino</label>
+            <input
+              type="text"
+              placeholder="Insira o destino"
+              id="estadia-destino"
+              class="input-destino"
+            />
+          </div>
+          <div class="input-container">
+            <div
+              class="input-group"
+              style="
+                border-right: none;
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+              "
+            >
+              <label for="estadia-checkin">Check-in</label>
+              <input type="text" id="estadia-checkin"  placeholder="data" class="input-checkin" />
+            </div>
+            <div
+              class="input-group"
+              style="
+                border-top-right-radius: 4px;
+                border-bottom-right-radius: 4px;
+              "
+            >
+              <label for="estadia-checkout">Check-out</label>
+              <input type="text" id="estadia-checkout" placeholder="data" class="input-checkout" />
+            </div>
+          </div>
+          <div class="input-group" style="border-radius: 4px">
+            <label for="estadia-quartos">Quartos</label>
+            <input
+              type="number"
+              placeholder="Quartos"
+              id="estadia-quartos"
+              class="input-quartos"
+            />
+          </div>
+          <div class="input-group" style="border-radius: 4px">
+            <label for="estadia-hospedes">Hóspedes</label>
+            <input
+              type="number"
+              placeholder="Hóspedes"
+              id="estadia-hospedes"
+              class="input-hospedes"
+            />
+          </div>
+          <button id="btn-mostrar-estadias">Mostrar Estadias</button>
+        </div>
+      </div>
+    </div>
     <main class="container-principal">
       <section class="container-planejar">
         <header class="textos-planejar">
@@ -178,5 +329,7 @@
       <img src="images/logo-dark.png" alt="Logo Golobe versão escura" />
       <img src="images/midias.png" alt="Ícones de redes sociais" />
     </footer>
+    <script src="js/anternacy.js"></script>
+    <script src="js/date.js"></script>
   </body>
 </html>

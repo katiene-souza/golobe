@@ -32,7 +32,11 @@ body {
 	font-family: var(--font-primary);
 	background-color: #FAFBFC;
 }
-ol, ul {
+
+input, span, button {
+	font-family: var(--font-primary);
+}
+ol, ul { 
 	list-style: none;
 }
 blockquote, q {

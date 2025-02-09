@@ -1,38 +1,43 @@
 :root {
     --color-almost-black: #112211;
-    --color-mint-green: #8DD3BB;
-    --color-white: #FFFFFF;
-    --color-salmon: #FF8682;
-    --color-mustard: #FFC107;
+    --color-mint-green: #8dd3bb;
+    --color-white: #ffffff;
+    --color-salmon: #ff8682;
+    --color-mustard: #ffc107;
     --color-black: #000000;
-    --color-dark-charcoal: #1C1B1F;
-    --color-medium-gray: #79747E;
-    --color-royal-blue: #1976D2;
-    --color-emerald-green: #4CAF50;
-    --color-mint-green-40: #8DD3BB66;
-    --color-flame-red: #FF3D00;
-    --color-terracotta: #A4806D;
+    --color-dark-charcoal: #1c1b1f;
+    --color-medium-gray: #79747e;
+    --color-royal-blue: #1976d2;
+    --color-emerald-green: #4caf50;
+    --color-mint-green-40: #8dd3bb66;
+    --color-flame-red: #ff3d00;
+    --color-terracotta: #a4806d;
     --color-slate-gray: #546869;
-    --color-seafoam-green: #65B599;
-    --color-ash-gray: #7C9C9F;
-    --color-light-cyan: #CDEAE1;
-    --color-light-steel-blue: #D7E2EE;
-    --color-light-gray: #D9D9D9;
-    --color-sandy-brown: #DFAD92;
+    --color-seafoam-green: #65b599;
+    --color-ash-gray: #7c9c9f;
+    --color-light-cyan: #cdeae1;
+    --color-light-steel-blue: #d7e2ee;
+    --color-light-gray: #d9d9d9;
+    --color-sandy-brown: #dfad92;
 
-    --gradient-black-transparent-to-dark: linear-gradient(to top, transparent 0%, #121212BF 20%);
-    --gradient-black-60: linear-gradient(to bottom, transparent 0%, #00000099 90%);
+    --gradient-black-transparent-to-dark: linear-gradient(to top,
+            transparent 0%,
+            #121212bf 20%);
+    --gradient-black-60: linear-gradient(to bottom,
+            transparent 0%,
+            #00000099 90%);
 
-    --font-primary: 'Montserrat', sans-serif;
+    --font-primary: "Montserrat", sans-serif;
 }
 
 .container-header {
-    background-image: var(--gradient-black-transparent-to-dark), url('../images/bolt-sea.png');
+    background-image: var(--gradient-black-transparent-to-dark),
+        url("../images/bolt-sea.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 24px;
-    margin: 30px;
+    margin: 30px 30px 0px 30px;
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -46,7 +51,6 @@
 .container-links-menu-header a {
     color: var(--color-white);
 }
-
 
 .menu-header,
 .container-links-menu-header {
@@ -88,8 +92,95 @@
     font-size: clamp(24px, 3vw, 40px);
 }
 
+.card-pesquisas {
+    background-color: var(--color-white);
+    box-shadow: 0px 4px 16px 0px rgba(141, 211, 187, 0.15);
+    border-radius: 16px;
+    padding: 50px 10px;
+    margin: -60px 10%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;   
+}
+
+.formularios-container {
+    width: 100%;
+}
+
+.card-pesquisa-botoes {
+    display: flex;
+}
+
+.btn-pesquisa {
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+
+.formulario-pesquisa {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.input-container {
+    display: flex;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid var(--color-ash-gray);
+    padding: 10px;
+    font-size: 14px;  
+    gap: 4px;
+}
+
+.input-container img {
+    border: 1px solid var(--color-ash-gray);
+}
+
+.formulario-pesquisa input, .formulario-pesquisa select {
+    border: none;
+    text-decoration: none;
+    outline: none;
+    width: 100%;
+}
+
+#btn-mostrar-voos, #btn-mostrar-estadias {
+    background-color: var(--color-mint-green);
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 500;
+}
+
+.oculto {
+    display: none;
+}
+
+.ativo {
+    background-color: var(--color-mint-green);
+    border-radius: 10px;
+}
+
 .container-principal {
-    margin: 50px;
+    margin: 100px;
     display: flex;
     flex-direction: column;
 }
@@ -157,7 +248,7 @@
 
 .section-pesquisas-destinos,
 .section-pesquisas-hoteis {
-    background-image: var(--gradient-black-60), url('../images/planes.png');
+    background-image: var(--gradient-black-60), url("../images/planes.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -204,10 +295,34 @@ footer {
     flex-wrap: wrap;
 }
 
+@media (max-width: 1181px) {
+    .card-pesquisas {
+        width: 50%;
+        margin: -50px auto;
+    }
+    .formularios-container {
+        justify-content: center;
+        align-items: center;
+    }
+    .formulario-pesquisa {
+        flex-direction: column;
+        width: 70%;
+        margin: auto;
+    }
+
+    .formulario-pesquisa input, .formulario-pesquisa select {
+        width: 100%;
+    }
+
+    #btn-mostrar-voos, #btn-mostrar-estadias  {
+        height: 50px;
+    }
+}
+
 @media (max-width: 1002px) {
     .container-header {
-      flex-direction: column; 
-      align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
 
     .container-destinos {
@@ -219,7 +334,7 @@ footer {
     main {
         align-items: center;
     }
-    
+
     .container-header {
         margin: 10px auto;
         padding: 20px;
@@ -247,10 +362,43 @@ footer {
     }
 }
 
+@media (max-width: 586px) {
+    .card-pesquisas {
+        width:80%;
+    }
+
+    .formulario-pesquisa {
+        gap: 20px;
+    }
+
+    .input-container {
+        flex-direction: column;
+    }
+
+    .input-group {
+        border: 1px solid var(--color-ash-gray) !important; 
+        border-radius: 4px;
+    }
+
+    .input-container img {
+       margin: auto;
+       width: 40px;
+       border: none;
+    }
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+    .formularios-container {
+        flex-direction: column;
+    }
+}
+
 @media (max-width: 480px) {
     .container-header {
         width: 85%;
     }
+
     .container-text-header h1 {
         font-size: 32px;
     }
