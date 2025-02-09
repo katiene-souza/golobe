@@ -23,6 +23,44 @@ O projeto Golobe visa criar uma base sólida para uma agência de viagens fictí
 
 O projeto está organizado da seguinte forma:
 
+```
+agencia_viagem
+├─ css
+│  ├─ reset.css
+│  └─ styles.css
+├─ database
+│  ├─ agencia_viagem_um.sql
+│  ├─ diagrama_conceitual.pdf
+│  ├─ diagrama_fisico.pdf
+│  └─ diagrama_logico.pdf
+├─ diagrama_fisico.png
+├─ Diagrama_logico.png
+├─ fisico.pdf
+├─ fisico.png
+├─ images
+│  ├─ bed-dark.svg
+│  ├─ bed.svg
+│  ├─ bolt-sea.png
+│  ├─ facebook.svg
+│  ├─ find.svg
+│  ├─ insta.svg
+│  ├─ instambul.png
+│  ├─ logo-dark.png
+│  ├─ logo.svg
+│  ├─ midias.png
+│  ├─ plane-dark.svg
+│  ├─ plane.svg
+│  ├─ planes.png
+│  ├─ swap.svg
+│  ├─ twitter.svg
+│  └─ youtube.svg
+├─ index.html
+├─ js
+│  ├─ anternacy.js
+│  └─ date.js
+└─ README.md
+
+```
 
 ## Interface Visual
 
