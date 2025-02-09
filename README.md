@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="golobe-8r5s1kezb-katienesouzas-projects.vercel.app" target="_blank" rel="noopener noreferrer">Link para o site</a>
+  <a href="https://golobe-katienesouzas-projects.vercel.app/" target="_blank" rel="noopener noreferrer">Link para o site</a>
 </p> 
 
 Este README detalha o desenvolvimento do projeto Golobe, uma simulação do site inicial de uma agência de viagens, com foco na interface visual e no planejamento do banco de dados, conforme os requisitos da Primeira Entrega Individual.
